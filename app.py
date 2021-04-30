@@ -4,6 +4,11 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route ('/Teste', methods=['POST'])
+def teste():
+    
+   
+    return "<h1>Hello World2</hi>"
 
 @app.route("/")
 def index():
